@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600");
 
+.img-bg{
+  background-image:url("../images/background_index.jpg");
+  min-height: 380px;
+  width:auto;
+
+}
 body {
   color: #777;
   font-family: "Open Sans", sans-serif;
@@ -464,8 +470,11 @@ input:focus, textarea:focus {
 }
 
 .search-bg {
-  margin-top: -50px;
-  position: relative;
+  margin-top:0;
+  position:absolute;
+  /*right:20px;*/
+  left: 100px;
+  top:250px;
   z-index: 1
 }
 
@@ -3594,7 +3603,8 @@ form .template-btn {
 }
 
 .section-padding3 {
-  padding-bottom: 140px
+  padding-bottom: 140px;
+  margin-top:50px;
 }
 
 .section-top {
