@@ -28,25 +28,70 @@
         </div>
         <div class="card-body">
           <form method="POST">
+
+
+
+
+            <!--email-->
             <div class="form-row">
-              <!--name-->
+              <div class="name">Email address</div>
+              <div class="value">
+                <div class="input-group">
+                  <input class="input--style-6" type="email" name="email" placeholder="example@email.com" required>
+                </div>
+              </div>
+            </div>
+
+            <!--Password-->
+            <div class="form-row">
+              <div class="name">Password</div>
+              <div class="value">
+                <div class="input-group">
+                  <input class="input--style-6" type="password" name="pass" id="password" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <!--Confirm Password-->
+            <div class="form-row">
+              <div class="name">Re Type Password</div>
+              <div class="value">
+                <div class="input-group">
+                  <input class="input--style-6" type="password" name="repass" id="confirm_password" onkeyup="validatePassword();" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <!--name-->
+            <div class="form-row">
               <div class="name">Full name</div>
               <div class="value">
                 <input class="input--style-6" type="text" name="full_name">
               </div>
             </div>
-            <!--gender-->
-            <div class="name col-lg-2">Gender</div>
-            <div class="default-select" id="default-select">
-              <select>
-                <option value="1">Male</option>
-                <option value="1">Female</option>
-              </select>
-            </div>
 
             <!--DOB-->
-            <div class="date-of-birth">
+            <div class="form-row">
+              <div class="name">Date Of Birth</div>
+              <div class="value">
+                <input class="input--style-6" type="date" name="dob">
+              </div>
             </div>
+
+            <!--gender-->
+            <div class="form-row">
+              <div class="name col-lg-2">Gender</div>
+              <div class="default-select" id="default-select">
+
+                <select class="col-lg-10">
+                  <option value="1">Male</option>
+                  <option value="1">Female</option>
+                </select>
+              </div>
+            </div>
+
+
+
 
             <!--Current Address-->
             <div class="form-row">
@@ -59,14 +104,28 @@
             </div>
 
 
+            <!--location-->
             <div class="form-row">
-              <div class="name">Email address</div>
-              <div class="value">
-                <div class="input-group">
-                  <input class="input--style-6" type="email" name="email" placeholder="example@email.com">
-                </div>
+              <div class="name col-lg-2">Location</div>
+              <div class="default-select" id="default-select">
+
+                <select class="col-lg-6">
+                  <option value="1">India</option>
+                  <option value="1">Poland</option>
+                  <option value="1">New Zeland</option>
+                  <option value="1">Australia</option>
+
+                </select>
+              </div>
+              <pre>     </pre>
+
+              <div class="col-lg-4">
+                <input class="input--style-6" type="text" name="city">
+
               </div>
             </div>
+
+
 
             <div class="form-row">
               <div class="name">Message</div>
@@ -99,11 +158,24 @@
   <!-- Jquery JS-->
   <script src="signup/vendor/jquery/jquery.min.js"></script>
 
+  <!--confirm password-->
+  <script>
+    var password = document.getElementById("password"),
+      confirm_password = document.getElementById("confirm_password");
+
+    function validatePassword() {
+      if (password.value != confirm_password.value) {
+        confirm_password.setCustomValidity("Passwords Don't Match");
+      } else {
+        confirm_password.setCustomValidity('');
+      }
+    }
+  </script>
 
   <!-- Main JS-->
   <script src="signup/js/global.js"></script>
 
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</body>
 
 </html>
 <!-- end document-->
