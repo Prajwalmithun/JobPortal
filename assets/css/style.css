@@ -471,10 +471,10 @@ input:focus, textarea:focus {
 
 .search-bg {
   margin-top:0;
-  position:absolute;
+  position:relative;
   /*right:20px;*/
-  left: 100px;
-  top:250px;
+  left: 15px;
+  top:125px;
   z-index: 1
 }
 
@@ -1034,15 +1034,15 @@ input:focus, textarea:focus {
 }
 
 .news-img1 {
-  background-image: url("../images/news1.jpg")
+  background-image: url("../images/[your_image]")
 }
 
 .news-img2 {
-  background-image: url("../images/news2.jpg")
+  background-image: url("../images/[your_image]")
 }
 
 .news-img3 {
-  background-image: url("../images/news3.jpg")
+  background-image: url("../images/[your_image]")
 }
 
 .news-tag li {
