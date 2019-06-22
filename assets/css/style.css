@@ -470,11 +470,11 @@ input:focus, textarea:focus {
 }
 
 .search-bg {
-  margin-top:0;
+  margin-top:-25px;
   position:relative;
   /*right:20px;*/
-/*  left: 15px;
-  top:125px;*/
+  left: 5px;
+  top:125px;
   z-index: 1
 }
 
